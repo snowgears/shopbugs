@@ -24,8 +24,8 @@ A clear and concise description of what you expected to happen.
 If applicable, add screenshots to help explain your problem.
 
 **Version:**
- - Spigot version: [e.g. Spigot 1.13.2, Paper-Spigot 1.12.1, etc]
- - Shop version [e.g. 1.7.3.2]
+ - Spigot version: [e.g. Spigot 1.16.3, Paper 1.16.3, etc.]
+ - Shop version: [e.g. 1.8.2.2]
 
 **Additional context**
 Add any other context about the problem here.
