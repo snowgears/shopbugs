@@ -1,0 +1,118 @@
+name: 🐞 Bug report
+description: Report a bug in Shop.
+title: "[BUG] Your Title Here"
+labels: [bug]
+body:
+- type: markdown
+  attributes:
+    value: |
+      Thanks for taking the time to report a Shop bug! Fill out the form below to provide us with info to help fix the bug.
+      Only use this if you're 100% sure you've found a bug and can reproduce it. If you're looking for general help with Shop, try the Discord server.
+
+- type: checkboxes
+  attributes:
+    label: Is there an existing issue for this?
+    description: Please search to see if an issue already exists for the bug you encountered.
+    options:
+    - label: I have searched the existing issues
+      required: true
+
+- type: dropdown
+  attributes:
+    label: Type of bug
+    description: What type of bug is this? Choose ALL that apply.
+    multiple: true
+    options:
+      - Performance issue or memory leak
+      - Data loss
+      - Exploit
+      - Compatibility issue
+      - Error in console
+      - Other unexpected behaviour
+  validations:
+    required: true
+
+- type: textarea
+  attributes:
+    label: Environment
+    description: |
+      examples:
+        - **Server Version**: Paper 1.17
+        - **Shop Version**: 1.8.2.7
+    value: |
+        - Server Version: 
+        - Shop Version: 
+    render: markdown
+  validations:
+    required: false
+
+- type: input
+  attributes:
+    label: Server startup log
+    description: Upload your server startup log (from the start of `latest.log` up to where it says "Done!") to either https://paste.gg or https://gist.github.com, save and then paste the link in this box.
+    placeholder: "Example: https://paste.gg/p/anonymous/109dd6a10a734a3aa430d5a351ea5210"
+  validations:
+    required: true
+
+- type: input
+  attributes:
+    label: Shop config files
+    description: Upload your Shop `config.yml` (and any other relevant files like `displayConfig.yml`) to either https://paste.gg or https://gist.github.com, save and then paste the link in this box. If you included those files in the same paste as your startup log, paste the same link here.
+    placeholder: "Example: https://paste.gg/p/anonymous/109dd6a10a734a3aa430d5a351ea5210"
+  validations:
+    required: true
+
+- type: input
+  attributes:
+    label: Error log (if applicable)
+    description: If you are reporting a console error, upload any relevant log excerpts to either https://paste.gg or https://gist.github.com, save and the paste the link in this box. If you included those files in the same paste as your startup log, paste the same link here.
+    placeholder: "Example: https://paste.gg/p/anonymous/109dd6a10a734a3aa430d5a351ea5210"
+
+- type: textarea
+  attributes:
+    label: Bug description
+    description: Describe roughly what the bug is here.
+    placeholder: |
+      Example: "Gamble shops don't give out items."
+  validations:
+    required: true
+- type: textarea
+  attributes:
+    label: Steps to reproduce
+    description: Provide an example of how to trigger the bug.
+    placeholder: |
+      Example:
+      1. Create a gamble shop.
+      2. Right click the sign to gamble.
+  validations:
+    required: true
+- type: textarea
+  attributes:
+    label: Expected behaviour
+    description: Explain what you should expect to happen.
+    placeholder: |
+      Example: "Players should receive an item."
+  validations:
+    required: true
+- type: textarea
+  attributes:
+    label: Actual behaviour
+    description: Explain what actually happens.
+    placeholder: |
+      Example: "Players don't receive an item, and are left with less money."
+  validations:
+    required: true
+
+- type: textarea
+  attributes:
+    label: Other information
+    description: |
+      In the text box below, you can attach any relevant screenshots, videos, files, and links to Timings/spark profiler reports.
+      You can also include a link to a heapdump if necessary, but please make sure you don't include any private player data in the heapdump.
+      If you suspect this issue is related to a prior issue/PR/commit, please mention it here.
+    placeholder: |
+      examples:
+        - https://timings.aikar.co/?id=16fa8c9919a74f6d9724afc9697aa4de
+        - https://spark.lucko.me/2HjwNC9UOv
+  validations:
+    required: false
