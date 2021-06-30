@@ -105,6 +105,7 @@ body:
 
 - type: textarea
   attributes:
+    label: Other information
     value: |
       In the text box below, you can attach any relevant screenshots, videos, files, and links to Timings/spark profiler reports.
       You can also include a link to a heapdump if necessary, but please make sure you don't include any private player data in the heapdump.
