@@ -1,8 +1,7 @@
 name: 🐞 Bug report
-about: Create a report to help us improve Shop!
+description: Report a bug in Shop.
 title: "[BUG] <title>"
 labels: [bug]
-body:
 body:
 - type: markdown
   attributes:
