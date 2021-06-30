@@ -1,6 +1,6 @@
 name: 🐞 Bug report
 description: Report a bug in Shop.
-title: "[BUG] <title>"
+title: "[BUG] Your Title Here"
 labels: [bug]
 body:
 - type: markdown
@@ -56,7 +56,7 @@ body:
 
 - type: input
   attributes:
-    label: EssentialsX config files
+    label: Shop config files
     description: Upload your Shop `config.yml` (and any other relevant files like `displayConfig.yml`) to either https://paste.gg or https://gist.github.com, save and then paste the link in this box. If you included those files in the same paste as your startup log, paste the same link here.
     placeholder: "Example: https://paste.gg/p/anonymous/109dd6a10a734a3aa430d5a351ea5210"
   validations:
