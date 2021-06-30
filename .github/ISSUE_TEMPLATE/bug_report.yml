@@ -37,7 +37,7 @@ body:
     label: Environment
     description: |
       examples:
-        - **Server Version:**: Paper 1.17
+        - **Server Version**: Paper 1.17
         - **Shop Version**: 1.8.2.7
     value: |
         - Server Version: 
@@ -106,6 +106,6 @@ body:
 - type: markdown
   attributes:
     value: |
-      In the text box below, you can attach any relevant screenshots, files and links to Timings/spark profiler reports.
+      In the text box below, you can attach any relevant screenshots, videos, files, and links to Timings/spark profiler reports.
       You can also include a link to a heapdump if necessary, but please make sure you don't include any private player data in the heapdump.
       If you suspect this issue is related to a prior issue/PR/commit, please mention it here.
