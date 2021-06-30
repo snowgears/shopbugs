@@ -106,9 +106,13 @@ body:
 - type: textarea
   attributes:
     label: Other information
-    value: |
+    description: |
       In the text box below, you can attach any relevant screenshots, videos, files, and links to Timings/spark profiler reports.
       You can also include a link to a heapdump if necessary, but please make sure you don't include any private player data in the heapdump.
       If you suspect this issue is related to a prior issue/PR/commit, please mention it here.
+    placeholder: |
+      examples:
+        - https://timings.aikar.co/?id=16fa8c9919a74f6d9724afc9697aa4de
+        - https://spark.lucko.me/2HjwNC9UOv
   validations:
     required: false
