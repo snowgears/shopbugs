@@ -46,7 +46,6 @@ body:
   validations:
     required: false
 
-body:
 - type: markdown
   attributes:
     value: |
