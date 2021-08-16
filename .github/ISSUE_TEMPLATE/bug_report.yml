@@ -46,6 +46,13 @@ body:
   validations:
     required: false
 
+body:
+- type: markdown
+  attributes:
+    value: |
+      Please make sure you are **NOT** using Hastebin, or any other self-hosted clone of Hastebin, as by default they will be deleted after 24 hours.
+      *We will not be able to assist you if your pastes have been deleted before being seen.*
+
 - type: input
   attributes:
     label: Server startup log
